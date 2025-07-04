@@ -19,7 +19,7 @@
 
         <x-forms.divider />
 
-        <x-forms.input label="Tags (Comma separeted)" name="tags" placeholder="Web Dev, Video, coding" />
+        <x-forms.input label="Tags (Comma separeted)" name="tags" placeholder="web, video, coding" />
 
 
         <x-forms.button>Publish</x-forms.button>
