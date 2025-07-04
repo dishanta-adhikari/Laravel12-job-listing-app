@@ -9,7 +9,12 @@
 
         <x-forms.divider />
 
-        <x-forms.input label="Empolyer Name" name="employer" />
+        <x-forms.input label="Employer Name" name="employer" />
+        
+        {{-- Check for logo insertion --}}
+        @if(session('logo_error'))
+            <div class="text-red-500 text-sm mb-2">{{ session('logo_error') }}</div>
+        @endif
         <x-forms.input label="Employer Logo" name="logo" type="file" />
 
         <x-forms.button> Create Account </x-forms.button>

@@ -8,10 +8,13 @@ use Tests\TestCase;
 class ExampleTest extends TestCase
 {
     use RefreshDatabase;
-    public function test_the_application_returns_a_successful_response(): void
+    
+    public function test_homepage_returns_successful_response_without_blade_components(): void
     {
-        $response = $this->get('/');
+        $this->withoutExceptionHandling();
 
-        $response->assertStatus(200);
+        $response = $this->get('/');
+        $response->assertOk();
+        
     }
 }
