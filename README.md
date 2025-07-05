@@ -15,7 +15,7 @@ Pixel Positions is a modern job listing platform built with Laravel. It allows e
 
 ### Prerequisites
 
-- PHP 8.2+
+- PHP 8.4+
 - Composer
 - Node.js & npm
 
